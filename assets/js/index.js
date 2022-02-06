@@ -83,4 +83,11 @@ const adults = person2.filter(function (name) {
   }
 });
 
-
+//Работа с flat
+const numberForFlat = [
+  1,
+  2,
+  3,
+  [10, 20, 30, [100, 200, 300, [1000, 2000, 3000]]],
+];
+const numberForFlat2 = numberForFlat.flat(Infinity);
