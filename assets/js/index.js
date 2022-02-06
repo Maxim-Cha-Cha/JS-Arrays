@@ -41,3 +41,7 @@ const numberForSplice4 = [1, 2, 3, 4, 5];
 numberForSplice4.splice(1, 0, "a", "b");
 numberForSplice4.splice(-1, 0, "c");
 numberForSplice4.splice(8, 0, "e");
+
+//Работа с sort
+const numberSort = [3, 4, 1, 2, 7];
+numberSort.sort();
