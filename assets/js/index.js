@@ -53,20 +53,34 @@ const person = [
   { firstName: "Test`ya", lastName: "Testovna", age: 16, gender: "female" },
   { firstName: "Logina", lastName: "Consol`evna", age: 42, gender: "female" },
 ];
-person.forEach(callback)
-function callback(currentName){
-console.log(
-  `Пользователь ${currentName.firstName} ${
-      currentName.lastName
-    } является ${currentName.gender} и ему(ей) сейчас ${
-      currentName.age
-    } лет`
-  )};
+person.forEach(callback);
+function callback(currentName) {
+  console.log(
+    `Пользователь ${currentName.firstName} ${currentName.lastName} является ${currentName.gender} и ему(ей) сейчас ${currentName.age} лет`
+  );
+}
 
-  //Работа с map
+//Работа с map
 
-  const callback2  = person.map(function callback (currentName) {
-    if (currentName) {
-      return {...currentName, telephoneNumber: 1234567890}
-    }
-  });
+const callback2 = person.map(function callback(currentName) {
+  if (currentName) {
+    return { ...currentName, telephoneNumber: 1234567890 };
+  }
+});
+
+//Работа с filter
+const person2 = [
+  { firstName: "Test", lastName: "Testovich", age: 27, gender: "male" },
+  { firstName: "User", lastName: "Userovich", age: 12, gender: "male" },
+  { firstName: "Test`ya", lastName: "Testovna", age: 16, gender: "female" },
+  { firstName: "Logina", lastName: "Consol`evna", age: 42, gender: "female" },
+  { firstName: "Undefined", lastName: "Undefinovich", age: 99 },
+  { firstName: "Null", lastName: "Nullovich", gender: "male" },
+];
+const adults = person2.filter(function (name) {
+  if (name.age > 18 && name.gender === "male") {
+    return name;
+  }
+});
+
+
