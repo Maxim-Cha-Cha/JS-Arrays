@@ -63,3 +63,10 @@ console.log(
     } лет`
   )};
 
+  //Работа с map
+
+  const callback2  = person.map(function callback (currentName) {
+    if (currentName) {
+      return {...currentName, telephoneNumber: 1234567890}
+    }
+  });
