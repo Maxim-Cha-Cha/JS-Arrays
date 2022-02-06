@@ -17,4 +17,10 @@ const numberPush = number1.push(4, 5, 6);
 const numberUnshift = number1.unshift(4, 5, 6);
 
 
+//Работа с shift, pop
+const methodShiftAndPop = ['js', 'css', 'jq'];
+
+const methodShift = methodShiftAndPop.shift();
+const methodPop = methodShiftAndPop.pop();
+
 
