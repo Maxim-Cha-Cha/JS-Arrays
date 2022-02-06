@@ -12,5 +12,9 @@ const numberContact = number1.concat(number2);
 const numberReversed = number1.reverse();
 
 
+//Работа с push, unshift
+const numberPush = number1.push(4, 5, 6);
+const numberUnshift = number1.unshift(4, 5, 6);
+
 
 
