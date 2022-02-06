@@ -24,3 +24,9 @@ const methodShift = methodShiftAndPop.shift();
 const methodPop = methodShiftAndPop.pop();
 
 
+//Работа с slice
+const slice1 = number3.slice(0, 3);
+const slice2 = number3.slice(3,5);
+
+
+
