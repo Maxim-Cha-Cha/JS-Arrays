@@ -8,3 +8,9 @@ const number3 = [1, 2, 3, 4, 5]
 const numberContact = number1.concat(number2);
 
 
+//Работа с reverse
+const numberReversed = number1.reverse();
+
+
+
+
