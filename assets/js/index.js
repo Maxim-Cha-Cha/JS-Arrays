@@ -45,3 +45,21 @@ numberForSplice4.splice(8, 0, "e");
 //Работа с sort
 const numberSort = [3, 4, 1, 2, 7];
 numberSort.sort();
+
+//Работа с forEach
+const person = [
+  { firstName: "Test", lastName: "Testovich", age: 42, gender: "male" },
+  { firstName: "User", lastName: "Userovich", age: 12, gender: "male" },
+  { firstName: "Test`ya", lastName: "Testovna", age: 16, gender: "female" },
+  { firstName: "Logina", lastName: "Consol`evna", age: 42, gender: "female" },
+];
+person.forEach(callback)
+function callback(currentName){
+console.log(
+  `Пользователь ${currentName.firstName} ${
+      currentName.lastName
+    } является ${currentName.gender} и ему(ей) сейчас ${
+      currentName.age
+    } лет`
+  )};
+
